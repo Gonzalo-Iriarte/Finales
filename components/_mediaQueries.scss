@@ -1,0 +1,95 @@
+/* MEDIA QUERIE */
+@media screen and (max-width: 1439px)  {
+
+    /* HEADER */
+    .superior {
+        height: 8vh;
+        align-items: center;
+        justify-content: space-between;
+        .menuImagen {
+            display: flex;
+            svg {
+                stroke: white;
+                font-size: small;
+            }
+        }
+        h1 {
+            font-size: 25px;
+            margin: 0;
+        }
+        nav {
+            display: none;
+        }
+    }
+    /* MAIN */
+    /* SECCION 1 */
+    .seccion1 {
+        flex-direction: column-reverse;
+        .textoPrincipal {
+            width: 100%;
+            p {
+                line-height: 14px;
+                font-weight: 400;
+                font-size: 12px;
+            }    
+        }
+        .imagenPrincipal img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    /* SECCION 2*/
+    .seccion2 {
+        h2 {
+            font-size: medium;
+            padding: 1.5rem;
+            height: 7rem;
+        }
+    }
+    /* SECCION 3 */
+    .seccion3 {
+        height: 30rem;
+        &__formulario {
+            align-items: center;
+            height: 15rem;
+            color: rgb(254, 241, 255);
+            a {
+                color: rgb(254, 241, 255);
+                margin-left: 6rem;
+            }
+        }
+        button {
+            margin-top: 2px;
+        }
+    }
+
+    /* FOOTER */
+    .inferior {
+        text-align: center;
+        gap: 0.5rem;
+        span {
+            position: inherit;
+            width: 100%;
+            font-size: small;
+        }
+        .redes {
+            width: 100%;
+            ul {
+                margin-top: 10px;
+                li {
+                    padding: 1px;
+                }
+                img {
+                    width: 25px;
+                }
+            }
+        }
+        .terminosYcondiciones ul {
+            flex-direction: column;
+            li {
+                padding: 1px;
+                font-size: small;
+            }
+        }
+    }
+}

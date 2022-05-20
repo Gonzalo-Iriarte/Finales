@@ -1,0 +1,78 @@
+/* HEADER START */
+
+.superior {
+    @include propiedadesContenedor (flex, row, space-between, center, 100%, 12vh, black);
+.logo {
+    height: 100%;
+    img {
+        height: 100%; 
+        border-radius: 100%;
+        animation: efectoLogo 1s both;
+        animation-direction: alternate;
+        animation-iteration-count: 3;
+    }
+}
+.menuImagen {
+    display: none;
+}
+    h1 {
+        font-size: 4rem;
+        font-family: 'Langar', cursive;
+        color: rgb(231,29,146);
+        margin-left: 13rem;
+    }
+    nav {
+        @include propiedadesContenedor (flex, row, '', center, 30%, 100%, '');
+        ul {
+            @extend .navegacionTemplate;
+            @include propiedadesContenedor (flex, '', space-between, '', 100%, '', '');
+            margin: 2%;
+            li {
+                font-family: 'Averia Serif Libre', cursive;
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@keyframes efectoLogo {
+    0% {
+        transform: translateX(150px); 
+        animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+        transform: translateX(75px); 
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateX(50px); 
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateX(25px); 
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateX(6px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateX(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+  }
+/* HEADER END */

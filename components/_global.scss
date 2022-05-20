@@ -1,0 +1,72 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin propiedadesContenedor ($desplegar, $direccion, $justificado, $alineado, $ancho, $alto, $colordeFondo) {
+    display: $desplegar;
+    flex-direction: $direccion;
+    justify-content: $justificado;
+    align-items: $alineado;
+    width: $ancho;
+    height: $alto;
+    background-color: $colordeFondo;
+}
+
+/* MAP */
+$rrss: (
+    twitter: rgb(124, 185, 255),
+    instagram: rgb(255, 191, 117),
+    youtube: rgb(255, 50, 50),
+    facebook: rgb(124, 124, 255),
+    spotify: rgb(26, 212, 26),
+    mail: white
+);
+
+@each $name, $color in $rrss {
+    .#{$name} {
+        stroke: $color;
+
+    }
+}
+
+/* EXTENDS */
+.enlaceLista {
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+.navegacionTemplate {
+    @extend .enlaceLista;
+    a {  
+        color: rgb(231,29,146);
+        transition: all 0.8s;
+    }
+    a:hover {
+        color: #fafafa;
+    }
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 3em;
+    height: 3em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #000000;
+  }
+  
+  .svg-icon circle {
+    stroke: #000000;
+    stroke-width: 1;
+  }

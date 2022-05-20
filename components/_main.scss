@@ -1,0 +1,94 @@
+/* MAIN START */
+
+/* SECCION 1 */
+.seccion1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 575px;
+    background-color: black;
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    min-height: 700px;
+    .textoPrincipal {
+        font-family: 'Averia Serif Libre', cursive;
+        width: 50%;
+        height: 475px;
+        background-color: black;
+        opacity: 0.5;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        h2 {
+            margin-top: 50px;
+        }
+        p {
+            padding: 2rem;
+            font-size: larger;
+            font-weight: 300;
+            font-style: italic;
+            line-height: 25px;
+        }
+    }
+    .imagenPrincipal img {
+        border-radius: 10px;
+        opacity: 0.55;
+    }
+}
+
+/* SECCION 2 */
+.seccion2 {
+    video {
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+        background-color: black;
+        height: 8rem;
+        padding-top: 3rem;
+        color: rgb(231,29,146);
+    }
+}
+
+/* SECCION 3 */
+.seccion3 {
+    @include propiedadesContenedor (flex, column, flex-end, '', '', 60rem, $colordeFondo);
+    
+    background-image: url(../images/imagenTextoPpal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    &__formulario {
+        @include propiedadesContenedor (flex, column, '', '', 100%, 18rem, '');
+        border: solid white 0.5px;
+        color: $colorDestacado;
+        padding: 10px;
+        text-align: left;
+        line-height: 3rem;
+        font-size: larger;
+        font-weight: 700;
+        h2 {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+        a {
+            display: inline-block;
+            margin-left: 6rem;
+            font-size: small;
+        }
+        input {
+            border-radius: 8px;
+            width: 11rem;
+            height: 2rem;
+        }
+        button {
+            display: block;
+            margin-left: 4.7rem;
+            margin-top: 2rem;
+            width: 5rem;
+            height: 2rem;
+            border-radius: 8px;
+        }
+    }
+}
+/* MAIN END */

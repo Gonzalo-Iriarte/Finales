@@ -1,0 +1,25 @@
+
+.terms {
+    text-align: center;
+    font-size: large;
+    width: 90%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    h1 {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .terms {
+        font-size: small;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+        h1 {
+        padding-top: 2rem;
+        }
+    }
+}

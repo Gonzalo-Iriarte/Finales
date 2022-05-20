@@ -1,0 +1,47 @@
+
+.stream {
+    
+    border: solid;
+    border-radius: 10px;
+    margin: 5% 40% 5% 40%;
+    width: 20%;
+    min-height: 500px;
+    text-align: center;
+    font-family: 'Langar', cursive;
+    img {
+        width: 100%;
+    }
+}
+
+.servicio {
+    @include propiedadesContenedor (flex, column, space-between, '', '', '', '');
+    margin: 10px;
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        border: solid black 1px;
+        margin: 1px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    
+    .stream {  
+        background-color: rgb(174, 170, 175); 
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+        border-top: none;
+        border-bottom: none;
+        img {
+            width: 100%;
+        }
+    }
+    .servicio { 
+        gap: 1rem;
+    }
+}
