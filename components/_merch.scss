@@ -1,5 +1,6 @@
 
 .mercaderia {
+    margin-top: 30px;
     font-family: 'Langar', cursive;
     h1 {
         text-align: center;
@@ -49,6 +50,7 @@
     }
     .merch {
         padding: 0;
+        margin-bottom: 0;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas: 

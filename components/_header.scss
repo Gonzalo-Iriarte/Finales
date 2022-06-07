@@ -2,26 +2,26 @@
 
 .superior {
     @include propiedadesContenedor (flex, row, space-between, center, 100%, 12vh, black);
-.logo {
-    height: 100%;
-    img {
-        height: 100%; 
-        border-radius: 100%;
-        animation: efectoLogo 1s both;
-        animation-direction: alternate;
-        animation-iteration-count: 3;
+    .logo {
+        height: 100%;
+        img {
+            height: 100%; 
+            border-radius: 100%;
+            animation: efectoLogo 1s both;
+            animation-direction: alternate;
+            animation-iteration-count: 3;
+        }
     }
-}
-.menuImagen {
-    display: none;
-}
+    .menuImagen {
+        display: none;
+    }
     h1 {
         font-size: 4rem;
         font-family: 'Langar', cursive;
         color: rgb(231,29,146);
         margin-left: 13rem;
     }
-    nav {
+    .menu {
         @include propiedadesContenedor (flex, row, '', center, 30%, 100%, '');
         ul {
             @extend .navegacionTemplate;

@@ -34,6 +34,7 @@
     .noticias {
         background-image: linear-gradient(to top, rgb(216, 139, 223), rgb(196, 196, 196));
         margin: 0.1rem;
+        margin-top: 28px;
         font-size: small;
         grid-template-columns: 1fr;
         grid-template-rows: repeat (8, 1fr);
